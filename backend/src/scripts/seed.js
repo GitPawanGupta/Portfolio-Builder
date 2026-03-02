@@ -15,13 +15,13 @@ const seedDatabase = async () => {
     if (!adminExists) {
       await Admin.create({
         email: 'admin@pasuai.online',
-        password: 'admin123',
+        password: 'PasuAI@2026',
         name: 'Admin User',
         role: 'ADMIN',
       });
       console.log('✅ Default admin created');
       console.log('   Email: admin@pasuai.online');
-      console.log('   Password: admin123');
+      console.log('   Password: PasuAI@2026');
     } else {
       console.log('ℹ️  Admin already exists');
     }
