@@ -7,7 +7,7 @@ import { successResponse, errorResponse } from '../utils/response.js';
 const TEMP_ADMIN = {
   _id: 'temp-admin-id',
   email: 'admin@pasuai.online',
-  password: 'admin123',
+  password: 'PasuAI@2026',
   name: 'Admin User',
   role: 'ADMIN',
   isActive: true,
