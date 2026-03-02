@@ -6,6 +6,7 @@ import { z } from 'zod'
 import toast from 'react-hot-toast'
 import api from '../services/api'
 import Navbar from '../components/Navbar'
+import SEO from '../components/SEO'
 import { Upload, Loader2, CheckCircle, Zap, Shield, Star, Award, Users, Mail, Phone, MapPin, Sparkles, Code, Palette, Rocket, Clock, Target } from 'lucide-react'
 
 const schema = z.object({
@@ -109,6 +110,11 @@ const PublicLeadForm = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Portfolio Builder - Create Professional Portfolios Online | Free Portfolio Maker"
+        description="Build stunning professional portfolios in minutes. Free portfolio builder with customizable templates, resume upload, and instant sharing. Perfect for developers, designers, and professionals."
+        keywords="portfolio builder, online portfolio, professional portfolio, resume builder, portfolio maker, free portfolio, portfolio website, developer portfolio, designer portfolio, create portfolio online, portfolio templates, portfolio design"
+      />
       <Navbar />
       
       {/* Floating Chat Widget Indicator - Responsive */}

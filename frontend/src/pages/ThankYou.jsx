@@ -1,5 +1,6 @@
 import { useLocation, Link } from 'react-router-dom'
 import { CheckCircle } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const ThankYou = () => {
   const location = useLocation()
@@ -7,6 +8,11 @@ const ThankYou = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center px-4">
+      <SEO 
+        title="Thank You - Application Submitted | Portfolio Builder"
+        description="Your portfolio application has been successfully submitted. Track your application status with your unique tracking ID."
+        keywords="portfolio submitted, application success, portfolio tracking"
+      />
       <div className="max-w-md w-full card text-center">
         <CheckCircle className="mx-auto h-16 w-16 text-green-500 mb-4" />
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Thank You!</h1>

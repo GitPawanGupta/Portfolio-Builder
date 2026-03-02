@@ -4,6 +4,7 @@ import { Search, CheckCircle, Clock, XCircle, Package } from 'lucide-react'
 import api from '../services/api'
 import toast from 'react-hot-toast'
 import Navbar from '../components/Navbar'
+import SEO from '../components/SEO'
 
 const TrackApplication = () => {
   const [trackingId, setTrackingId] = useState('')
@@ -94,6 +95,11 @@ const TrackApplication = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      <SEO 
+        title="Track Your Portfolio Application | Portfolio Builder"
+        description="Track your portfolio application status in real-time. Enter your tracking ID to check the progress of your professional portfolio creation."
+        keywords="track portfolio, application status, portfolio tracking, check portfolio status"
+      />
       <Navbar />
       
       <div className="container mx-auto px-4 py-16">
