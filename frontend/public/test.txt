@@ -1,0 +1,1 @@
+SEO Test File - If you see this, public folder is working!
